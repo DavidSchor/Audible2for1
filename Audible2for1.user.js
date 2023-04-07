@@ -20,9 +20,6 @@
     }
 
     let divButton = document.createElement('div')
-    if (!divButton) {
-        divButton = document.createElement('div')
-    }
     divButton.classList.add('bc-button-text')
     divButton.classList.add('bc-text')
     divButton.classList.add('bc-size-action-small')
@@ -35,7 +32,7 @@
 
     let eleA = document.createElement('a')
     eleA.setAttribute('onclick', 'return false;')
-    eleA.textContent = 'Remove non wishlisted'
+    eleA.textContent = 'Remove non wishlisted books'
 
     divButton.appendChild(eleA)
     divButton.addEventListener('click', () => {
