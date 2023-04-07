@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove books not owned or wishlisted
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.11
 // @description  Adds a button that allows you to remove all books that are not in library or owned from the 2 for 1 sale. Not pretty. Easy to break by audible.
 // @author       DavidSchor
 // @match        *://www.audible.co.uk/special-promo/2for1/*
