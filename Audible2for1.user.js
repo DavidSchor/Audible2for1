@@ -36,8 +36,8 @@
 
     divButton.appendChild(eleA)
     divButton.addEventListener('click', () => {
-        document.querySelectorAll('.adblAddToWishlistButton:not(.bc-hidden)').forEach(element =>
-                                                                                      element.closest('li').remove()
+        document.querySelectorAll('.adblAddToWishlistButton:not(.bc-hidden)').forEach(element => {if(element.closest('li').innerHTML.indexOf("Shelf") === -1){
+                                                                                      element.closest('li').remove()}}
 
                                                                                      )})
 }())
