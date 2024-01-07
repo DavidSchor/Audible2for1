@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove books not owned or wishlisted
 // @namespace    http://tampermonkey.net/
-// @version      0.11
+// @version      0.12
 // @description  Adds a button that allows you to remove all books that are not in library or owned from the 2 for 1 sale. Not pretty. Easy to break by audible.
 // @author       DavidSchor
 // @match        *://www.audible.co.uk/special-promo/2for1/*
@@ -38,7 +38,8 @@
     divButton.addEventListener('click', () => {
         document.querySelectorAll('.adblAddToWishlistButton:not(.bc-hidden)').forEach(element => {if(element.closest('li').innerHTML.indexOf("Shelf") === -1){
                                                                                       element.closest('li').remove()}}
-                                                                                     )})
+    
+    // Play in tab in library. Credit to https://github.com/hnprashanth/audible-play-in-tab                                                                                 )})
     var asins = []
   $("input[name='asin']").each(function () {
     const asin = $(this).val()
